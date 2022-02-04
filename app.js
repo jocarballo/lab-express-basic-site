@@ -19,6 +19,10 @@ app.get('/work', (req, res, next) => {
 	res.sendFile(__dirname + '/views/work.html')
 });
 
+app.get('/gallery', (req, res, next) => {
+	res.sendFile(__dirname + '/views/gallery.html')
+});
+
 
 app.listen(port, () => {
 	console.log(`Listening on port ${port}`)
